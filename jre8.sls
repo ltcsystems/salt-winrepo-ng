@@ -5,7 +5,7 @@
 # you more versions and also different builds. IF you do use these, make sure you adapt your sls file accordingly.  
 # http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
 
-{% set versions = {'8.0':['201']} %}
+{% set versions = {'8.0':['201','221']} %}
 
 jre8:
 {% for major, subversions in versions.items() %}
