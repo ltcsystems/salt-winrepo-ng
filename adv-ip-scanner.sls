@@ -1,4 +1,4 @@
-{% set versions = {'2.5':['3784']} %}
+{% set versions = {'2.5':['3784','3850']} %}
 {% set source_path = 'salt://win/repo-ng/adv-ip-scanner' %}
 
 adv-ip-scanner:
