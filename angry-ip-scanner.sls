@@ -1,4 +1,9 @@
-{% set PROGRAM_FILES = "%ProgramFiles%" %}
+{% if grains['cpuarch'] == 'AMD64' %}
+    {% set PROGRAM_FILES = "%ProgramFiles(x86)%" %}
+{% else %}
+    {% set PROGRAM_FILES = "%ProgramFiles%" %}
+{% endif %}
+
 {% set versions = {'3':['5.3','5.5','6.1','6.2']} %}
 {% set source_path = 'salt://win/repo-ng/angry-ip-scanner' %}
 
