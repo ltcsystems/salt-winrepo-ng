@@ -1,3 +1,4 @@
+{% set PROGRAM_FILES = "%ProgramFiles%" %}
 {% set versions = {'3':['5.3','5.5','6.1','6.2']} %}
 {% set source_path = 'salt://win/repo-ng/angry-ip-scanner' %}
 
@@ -7,8 +8,8 @@ angry-ip-scanner:
   '{{ major }}.{{ minor }}':
     full_name: 'Angry IP Scanner'
     installer: '{{ source_path }}/ipscan-{{ major }}.{{ minor }}-setup.exe'
-    install_flags: ''
-    uninstaller: 'C:\Program Files\Angry IP Scanner\uninstall.exe'
+    install_flags: '/S'
+    uninstaller: '{{ PROGRAM_FILES }}\Angry IP Scanner\uninstall.exe'
     uninstall_flags: '/S'
     msiexec: False
     locale: en_US
