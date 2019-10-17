@@ -8,8 +8,8 @@ angry-ip-scanner:
     full_name: 'Angry IP Scanner'
     installer: '{{ source_path }}/ipscan-{{ major }}.{{ minor }}-setup.exe'
     install_flags: ''
-    uninstaller: 'C:\Program Files\Angry IP Scanner\uninstall.exe /S'
-    uninstall_flags: ''
+    uninstaller: 'C:\Program Files\Angry IP Scanner\uninstall.exe'
+    uninstall_flags: '/S'
     msiexec: False
     locale: en_US
     reboot: False
