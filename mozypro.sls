@@ -9,11 +9,11 @@ mozy-pro:
     installer: '{{ source_path }}/mozypro-2_38_2_674-96909.exe'
     install_flags: ''
     uninstaller: 'msiexec.exe'
-    uninstall_flags: '/qn /noreboot /x {EBB3263D-AF89-0907-44BC-B6FFA8DE0525}'
+    uninstall_flags: '/qn /norestart /x {EBB3263D-AF89-0907-44BC-B6FFA8DE0525}'
     msiexec: True
     locale: en_US
     reboot: False
 {% endfor %}
 {% endfor %}
 
-# it can be manually downloaded from you Mozy console:
+# it can be manually downloaded from your Mozy console:
