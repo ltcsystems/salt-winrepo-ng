@@ -10,7 +10,7 @@ wireshark:
     full_name: 'Wireshark {{ version }}'
     installer: 'https://1.na.dl.wireshark.org/win32/all-versions/Wireshark-win32-{{ version }}.exe'
     {% endif %}
-    install_flags: '/S /desktopicon=yes /quicklaunchicon=yes'
+    install_flags: '/S /desktopicon=no /quicklaunchicon=no'
     uninstaller: '{{ PROGRAM_FILES }}\Wireshark\uninstall.exe'
     uninstall_flags: '/S'
     msiexec: False
