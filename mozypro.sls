@@ -10,7 +10,7 @@ mozy-pro:
     install_flags: ''
     uninstaller: 'msiexec.exe'
     uninstall_flags: '/qn /norestart /x {EBB3263D-AF89-0907-44BC-B6FFA8DE0525}'
-    msiexec: True
+    msiexec: False
     locale: en_US
     reboot: False
 {% endfor %}
