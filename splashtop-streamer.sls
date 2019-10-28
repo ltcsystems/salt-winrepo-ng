@@ -7,7 +7,7 @@ splashtop-streamer:
     installer: ''
     install_flags: ''
     uninstaller: 'msiexec.exe'
-    uninstall_flags: '/x {B7C5EA94-B96A-41F5-BE95-25D78B486678}'
+    uninstall_flags: '/quiet /qn /x {B7C5EA94-B96A-41F5-BE95-25D78B486678}'
     msiexec: False
     locale: en_US
     reboot: False
