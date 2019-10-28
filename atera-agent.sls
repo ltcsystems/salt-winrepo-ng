@@ -1,4 +1,4 @@
-{% set versions = {'1.8.0.3','1.7.3.7'} %}
+{% set versions = {'1.8.0.3':'1.7.3.7'} %}
 
 {% for major in versions.items() %}
 atera-agent:
