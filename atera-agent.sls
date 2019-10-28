@@ -1,8 +1,8 @@
-{% set versions = ['1.8.0.3','1.7.3.7'] %}
+{% set versions = ['1.8.0.3', '1.7.3.7'] %}
 
-{% for major in versions %}
 atera-agent:
-  '{{ major }}':
+  {% for version in versions %}
+  '{{ version }}':
     full_name: 'AteraAgent'
     installer: 'salt://win/repo-ng/atera-agent/Setup.msi'
     install_flags: ''
