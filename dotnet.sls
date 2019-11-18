@@ -1,5 +1,14 @@
 dotnet:
-  '4.6.01590':
+  '4.8.3928.0':
+    full_name: 'Microsoft .NET Framework 8'
+    installer: 'https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe'
+    install_flags: '/q /norestart'
+    uninstaller: 'msiexec.exe'
+    uninstall_flags: '/X {16735AF7-1D8D-3681-94A5-C578A61EC832}'
+    msiexec: False
+    locale: en_US
+    reboot: False
+'4.6.01590':
     full_name: 'Microsoft .NET Framework 4.6.2'
     installer: 'https://download.microsoft.com/download/D/5/C/D5C98AB0-35CC-45D9-9BA5-B18256BA2AE6/NDP462-KB3151802-Web.exe'
     install_flags: '/q /norestart'
