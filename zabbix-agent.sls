@@ -15,7 +15,7 @@ zabbix-agent:
     installer: '{{source_path}}{{major}}.{{minor}}/zabbix_agent-{{major}}.{{minor}}-windows-i386-openssl.msi'
     uninstaller:  '{{source_path}}{{major}}.{{minor}}/zabbix_agent-{{major}}.{{minor}}-windows-i386-openssl.msi'
     {% endif %}
-    install_flags: '/qn /norestart'
+    install_flags: '/qn /norestart SERVER=localhost'
     uninstall_flags: '/qn /norestart'
     msiexec: True
     locale: en_US
