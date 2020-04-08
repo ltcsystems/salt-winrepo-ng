@@ -1,4 +1,4 @@
-{% set versions = {'2.5':['3850','3784','3850']} %}
+{% set versions = {'2.5':['3850','3784']} %}
 
 adv-ip-scanner:
 {% for major, subversions in versions.items() %}
