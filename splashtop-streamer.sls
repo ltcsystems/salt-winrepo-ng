@@ -1,4 +1,4 @@
-{% set versions = ['3.3.4.0'] %}
+{% set versions = ['3.4.2.1','3.3.4.0'] %}
 
 splashtop-streamer:
   {% for version in versions %}
