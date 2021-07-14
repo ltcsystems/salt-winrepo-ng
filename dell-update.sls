@@ -1,4 +1,4 @@
-dell-update:
+dell-legacy-update:
   '1.7.1015.0':
     full_name: 'Dell Update'
     installer: ''
