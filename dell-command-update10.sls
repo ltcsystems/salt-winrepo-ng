@@ -17,6 +17,15 @@ dcu-cli10:
     msiexec: False
     locale: en_US
     reboot: False
+  '3.1.1':
+    full_name: 'Dell Command | Update for Windows 10'
+    installer: 'salt://deploy/dell-command-update/Dell-Command-Update-Application-for-Windows-10_34T96_WIN_4.2.1_A00.EXE'
+    install_flags: '/S'
+    uninstaller: 'msiexec.exe'
+    uninstall_flags: '/q /X{5669AB71-1302-4412-8DA1-CB69CD7B7324}'S
+    msiexec: False
+    locale: en_US
+    reboot: False
   '3.1.2':
     full_name: 'Dell Command | Update for Windows 10'
     installer: 'salt://deploy/dell-command-update/Dell-Command-Update-Application-for-Windows-10_34T96_WIN_4.2.1_A00.EXE'
